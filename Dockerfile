@@ -1,4 +1,4 @@
-DE nginx:1.17.1-alpin
+FROM nginx:1.17.1-alpine
 COPY ./dist/crudtuto-Front /usr/share/nginx/html
-EXPOSER 4200
-CMD ["nginx », « -g », « démon désactivé; »]
+EXPOSE 4200
+CMD ["nginx", "-g", "daemon off;"]
